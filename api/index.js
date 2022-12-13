@@ -1,12 +1,17 @@
 /* eslint-disable no-unused-vars */
 const formidable = require('formidable');
 const express = require('express');
+const bodyParser = require('body-parser');
 const fs = require('fs');
 const cors = require('cors');
 const mysql = require('mysql');
 
-const app = express().use('*', cors())
-const port = 9090
+const app = express()
+.use('*', cors())
+.use(bodyParser.urlencoded({
+    extended: true
+}))
+.use(bodyParser.json());
 
 const con = mysql.createConnection({
   host: "localhost",
@@ -25,8 +30,12 @@ app.post('/fileupload', (req, res) => {
         res.end();
       });
     });
-  })
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
 })
+
+app.post('/register', (req, res) => {
+  console.log(req.body)
+  console.log(Date)
+  res.send('ok')
+})
+
+app.listen(9090, () =>{})

@@ -1,7 +1,6 @@
 <template>
-    <div style="height: 500px; width: 500px; border: 1px solid red; position: relative;">
+    <div style="w-full">
       <DropZone 
-      style="none"
         method="POST"
         @sending="uploaded"
         :maxFiles="Number(90000000000)"
