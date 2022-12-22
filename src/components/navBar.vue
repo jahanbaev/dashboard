@@ -1,6 +1,6 @@
 <template>
   <div>  
-    <nav class="z-10 fixed box-border  h-14 bg-zinc-800 pb-7 w-full">
+    <nav class="z-10 fixed box-border  h-14 bg-zinc-800  w-full">
         <ul class=" max-w-7xl flex  box-border pl-2 pr-2  text-lg h-full w-full m-auto text-white absolute bg-zinc-800 flex-col lg:flex-row lg:bg-transparent lg:relative lg:justify-end lg:items-center">
             <div class="mr-auto mt-3 lg:mt-0">Admin</div>
             <div class="links top-16 lg:top-0 flex flex-col lg:flex-row">

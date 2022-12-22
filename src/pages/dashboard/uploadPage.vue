@@ -1,5 +1,8 @@
 <template>
     <div style="w-full">
+      <form action="">
+        
+      </form>
       <DropZone 
         method="POST"
         @sending="uploaded"

@@ -14,6 +14,11 @@ import leftBar from '@/components/leftBar.vue';
 import { RouterView } from 'vue-router';
 export default {
   name: 'App',
+  beforeCreate(){
+      if(!document.cookie.split("token=")[1]){
+        this.$router.push('/login')
+      }
+  },
   components: {
     navBar,
     leftBar,

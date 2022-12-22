@@ -10,8 +10,12 @@ const auth =  {
           })
     },
 
-    login() {
-
+    login(val) {
+        return axios({
+            method: 'post',
+            url: this.url + '/login',
+            data: val
+          })
     }
 }
 

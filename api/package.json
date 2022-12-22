@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "target": "esnext",
+    "module": "esnext",
+  "scripts": {
+    "test": "node index.js"
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

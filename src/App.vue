@@ -21,4 +21,8 @@ export default {
   box-sizing: border-box;
 }
 
+*:focus{
+  outline: none;
+}
+
 </style>
